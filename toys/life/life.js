@@ -38,6 +38,8 @@ const importObject = {
 };
 
 async function bootstrap() {
+  // Load WebAssembly module `life.wasm`
+  // https://developer.mozilla.org/en-US/docs/WebAssembly/JavaScript_interface/instantiateStreaming
   Game = await WebAssembly.instantiateStreaming(
     fetch("life.wasm"), importObject
   )

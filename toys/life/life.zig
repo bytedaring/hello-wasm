@@ -27,7 +27,7 @@ var WORLD = World{
 };
 
 // Get neighbors in an area
-export fn get_neighbors(index: u32) u8 {
+fn get_neighbors(index: u32) u8 {
     var num_neighbors: u8 = 0;
     var x: u32 = index % WIDTH;
     var y: u32 = index / WIDTH;
