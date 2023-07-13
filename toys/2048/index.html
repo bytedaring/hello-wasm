@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      --font-size: calc(0.325rem + 1vw);
+      --line-height: calc(1.5 * var(--font-size));
+    }
+
+    @media screen {
+      header {
+        /* Override the blob image */
+        /* This background from http://philbit.com/svgpatterns/#honeycomb */
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDU2IDEwMCI+CjxyZWN0IHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiIGZpbGw9ImhzbCgwLDUwJSw1MCUpIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iaHNsKDAsNTAlLDQwJSkiIHN0cm9rZS13aWR0aD0iMiI+PC9wYXRoPgo8cGF0aCBkPSJNMjggMEwyOCAzNEwwIDUwTDAgODRMMjggMTAwTDU2IDg0TDU2IDUwTDI4IDM0IiBmaWxsPSJub25lIiBzdHJva2U9ImhzbCgwLDUwJSw0NSUpIiBzdHJva2Utd2lkdGg9IjEuNSI+PC9wYXRoPgo8L3N2Zz4=");
+      }
+    }
+
+    header {
+      display: block;
+      text-align: center;
+    }
+
+    header>h1 {
+      margin: 0;
+      padding-top: var(--line-height);
+      padding-bottom: 10px;
+    }
+
+    #cnvdiv {
+      width: 250px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Game Demo</h1>
+  </header>
+  <div id="cnvdiv">
+    <canvas id="game_canvas" width="296" height="296">Browser does not support HTML5 canvas element.</canvas>
+    <br />
+    <h5>Controls</h5>
+    <p>Move = WASD or Arrow Keys</p>
+    <p>Reset = r</p>
+  </div>
+</body>
+<script src="game.js"> </script>
+
+</html>
